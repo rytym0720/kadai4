@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -12,32 +13,28 @@
   <script>
 
     const showAd = () => {
-      var table = "机を片付ける、"
-      var job = "掃除"
-      var milk = "牛乳を買う、"
-      var shopping = "買い物"
-      var walk = "散歩する、"
-      var work = "運動"
-      var a = 1;
+      const task =["[内容]机を片付ける、[ジャンル]掃除","[内容]掃除、[ジャンル]買い物","[内容]牛乳を買う、[ジャンル]運動"]
 
       console.log('=====================');
       console.log('現在持っているのタスク一覧');
       console.log('=====================');
-      console.log(`${0}${":"}[内容]${table}[ジャンル]${job}`);
-      console.log(`${1}${":"}[内容]${milk}[ジャンル]${shopping}`);
-      console.log(`${2}${":"}[内容]${walk}[ジャンル]${work}`);
-    }
 
+      for (let i = 0; i < 3; i++){
+        console.log(` ${i}: ${task[i]}`);
+      }
+    }
+   
     showAd();
 
 
     var question = prompt("「確認,追加,削除,終了」の4つのいずれかを入力してください");
-
     document.write();
     var content = prompt("タスクを入力してください");
     document.write();
     var name = prompt("ジャンルを入力してください");
     showAd();
+
+    
     console.log(`${3}${":"}[内容]${content}[ジャンル]${name}`);
 
     var name = alert("新しいをタスクを追加しました");
