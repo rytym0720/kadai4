@@ -6,7 +6,6 @@
   <meta charset="utf-8">
   <title>課題1-4</title>
 
-
 </head>
 
 <body>
@@ -19,25 +18,22 @@
       console.log('現在持っているのタスク一覧');
       console.log('=====================');
 
-      for (let i = 0; i < 3; i++){
+      for (let i = 0; i < task.length; i++){
         console.log(` ${i}: ${task[i]}`);
       }
     }
    
     showAd();
 
-
-    var question = prompt("「確認,追加,削除,終了」の4つのいずれかを入力してください");
+    const question = prompt("「確認,追加,削除,終了」の4つのいずれかを入力してください");
     document.write();
-    var content = prompt("タスクを入力してください");
+    const content = prompt("タスクを入力してください");
     document.write();
-    var name = prompt("ジャンルを入力してください");
+    let name1 = prompt("ジャンルを入力してください");
     showAd();
-
     
-    console.log(`${3}${":"}[内容]${content}[ジャンル]${name}`);
-
-    var name = alert("新しいをタスクを追加しました");
+    console.log(`${3}${":"}[内容]${content}[ジャンル]${name1}`);
+    let name2 = alert("新しいをタスクを追加しました");
 
   </script>
 </body>
